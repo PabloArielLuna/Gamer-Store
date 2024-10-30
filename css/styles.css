@@ -253,6 +253,7 @@ nav ul li {
     width: 100%;
     max-width: 400px;
     border-radius: 8px;
+    object-fit: cover;
 }
 
 /* Catálogo Responsivo */
@@ -699,7 +700,15 @@ footer {
     }
 
     .carrusel {
-        height: 40vw;
+        height: 20vw;
+    }
+
+    .overlay-banner {
+        max-height: 25vw;
+    }
+
+    .imagen-bienvenida {
+        max-height: 200px; /* Ajuste menor para pantallas pequeñas */
     }
 
     /* Texto del banner */
