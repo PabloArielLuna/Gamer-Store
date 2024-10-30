@@ -704,11 +704,11 @@ footer {
 
     /* Texto del banner */
     .texto-banner h1 {
-        font-size: 1.8em;
+        font-size: 1rem;
     }
 
     .texto-banner p {
-        font-size: 0.5rem;
+        font-size: 0.8rem;
     }
 
     .tarjeta-producto {
