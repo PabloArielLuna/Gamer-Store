@@ -702,6 +702,15 @@ footer {
         height: 40vw;
     }
 
+    /* Texto del banner */
+    .texto-banner h1 {
+        font-size: 1rem;
+    }
+
+    .texto-banner p {
+        font-size: 0.5rem;
+    }
+
     .tarjeta-producto {
         width: 100%;
     }
