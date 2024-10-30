@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>Gamer Store</title>
+  <link rel="shortcut icon" href="static/imagenes/logo.png" type="image/x-icon" />
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" type="text/css" />
+  <link rel="stylesheet" href="css/styles.css" type="text/css" />
+  <script src="Javascript.js" defer></script>
+</head>
+
+<body>
+  <header class="encabezado">
+    <a id="arriba"><img src="static/imagenes/logo.png" alt="logo"></a>
+    <h1 class="titulo-pagina"><em>Gamer Store</em></h1>
+  </header>
+
+  <!-- Banner  -->
+  <section class="banner">
+    <h2>Level Up Your Game!</h2>
+    <p>Explora lo último en consolas, juegos y accesorios.</p>
+  </section>
+
+  <nav>
+    <button class="alternar-menu" onclick="alternarMenu()">☰</button>
+    <ul id="menu">
+      <li><a href="index.html"><i class="fas fa-home"></i> Página principal</a></li>
+      <li><a href="productos.html"><i class="fas fa-book"></i> Catálogo de productos</a></li>
+      <li><a href="contacto.html"><i class="fas fa-comment-alt"></i> Contacto</a></li>
+      <li><a href="reseñas.html"><i class="fas fa-comment-dots"></i> Opiniones</a></li>
+    </ul>
+  </nav>
+
+  <div class="overlay-banner">
+    <img src="static/imagenes/banner.jpg" alt="Banner de Gamer Store">
+    <div class="texto-banner">
+        <h1>Bienvenido a Gamer Store</h1>
+        <p>Encuentra los mejores productos digitales para gamers</p>
+    </div>
+</div>
+
+  <main>
+    <div class="carrusel">
+      <div id="carrusel-interno" class="carrusel-interno">
+        <div class="carrusel-item activo">
+          <a href="static/imagenes/PS5.png" target="_blank" title="Ver más grande"><img src="static/imagenes/PS5.jpg" alt="PS5"></a>
+        </div>
+        <div class="carrusel-item">
+          <a href="static/imagenes/Switch.jpg" target="_blank" title="Ver más grande"><img src="static/imagenes/Switch.jpg" alt="Nintendo Switch"></a>
+        </div>
+        <div class="carrusel-item">
+          <a href="static/imagenes/XBox Series S.jpg" target="_blank" title="Ver más grande"><img src="static/imagenes/XBox Series S.jpg" alt="XBox Series S"></a>
+        </div>
+      </div>
+      <div class="botones-carrusel">
+        <button id="prev" class="control-carrusel">❮</button>
+        <button id="sig" class="control-carrusel">❯</button>
+      </div>
+    </div>
+
+    <article class="articulo-bienvenida">
+      <div class="contenedor-imagen">
+        <a href="https://as.com/meristation/2020/04/09/noticias/1586416757_712213.html" target="_blank"><img src="static/imagenes/joystick.gif" alt="Bienvenida" class="imagen-bienvenida"></a>
+      </div>
+      <div class="contenedor-texto">
+        <h3>Bienvenidos</h3>
+        <p>
+          Bienvenidos a Gamer Store: tu destino definitivo para productos gamer. En Gamer Store, nos apasiona ofrecerte lo último en juegos, accesorios y contenido digital.
+        </p>
+      </div>
+    </article>
+  </main>
+
+  <footer>
+    <div class="pie-contenido">
+      <div class="pie-iconos">
+        <a href="mailto:gamerstore@gmail.com"><i class="fas fa-envelope"></i></a>
+        <a href="https://www.twitter.com"><i class="fab fa-twitter"></i></a>
+        <a href="https://www.instagram.com"><i class="fab fa-instagram"></i></a>
+      </div>
+      <p>© 2024 Gamer Store. Todos los derechos reservados.</p>
+    </div>
+  </footer>
+</body>
+</html>

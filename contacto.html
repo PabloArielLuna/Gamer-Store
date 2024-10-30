@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Gamer Store</title>
+    <link rel="shortcut icon" href="static/imagenes/logo.png" type="image/x-icon" />
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" type="text/css" />
+    <link rel="stylesheet" href="css/styles.css" type="text/css" />
+    <script src="Javascript.js" defer></script>
+</head>
+
+<body>
+    <header class="encabezado">
+        <a id="arriba"><img src="static/imagenes/logo.png" alt="logo"></a>
+        <h1 class="titulo-pagina"><em>Gamer Store</em></h1>
+    </header>
+
+    <!-- Banner  -->
+    <section class="banner">
+        <h2>Level Up Your Game!</h2>
+        <p>Explora lo último en consolas, juegos y accesorios.</p>
+    </section>
+
+    <nav>
+        <button class="alternar-menu" onclick="alternarMenu()">☰</button>
+        <ul id="menu">
+            <li><a href="index.html"><i class="fas fa-home"></i> Página principal</a></li>
+            <li><a href="productos.html"><i class="fas fa-book"></i> Catálogo de productos</a></li>
+            <li><a href="contacto.html"><i class="fas fa-comment-alt"></i> Contacto</a></li>
+            <li><a href="reseñas.html"><i class="fas fa-comment-dots"></i> Opiniones</a></li>
+        </ul>
+    </nav>
+
+    <div class="overlay-banner">
+        <img src="static/imagenes/banner.jpg" alt="Banner de Gamer Store">
+        <div class="texto-banner">
+            <h1>Bienvenido a Gamer Store</h1>
+            <p>Encuentra los mejores productos digitales para gamers</p>
+        </div>
+    </div>
+
+    <main class="pagina-registro">
+        <div class="contenedor-form">
+            <h2><i class="fas fa-star"></i> Tu opinión importa</h2>
+            <form id="form-registro" action="https://formspree.io/f/mrbgewwk" method="POST">
+                <div class="grupo-form">
+                    <label for="usuario"><i class="fas fa-user"></i> Nombre de Usuario:</label>
+                    <input type="text" id="usuario" name="usuario" required />
+                </div>
+                <div class="grupo-form">
+                    <label for="email"><i class="fas fa-envelope"></i> Correo Electrónico:</label>
+                    <input type="email" id="email" name="email" placeholder="kakaroto@example.com" required />
+                </div>
+                <div class="grupo-form">
+                    <label for="dob"><i class="fas fa-calendar-alt"></i> Fecha de Nacimiento:</label>
+                    <input type="date" id="dob" name="dob" required />
+                </div>
+                <div class="grupo-form">
+                    <label><i class="fas fa-venus-mars"></i> Género:</label>
+                    <div class="grupo-radio">
+                        <label><input type="radio" name="genero" value="masculino" required /> Masculino</label>
+                        <label><input type="radio" name="genero" value="femenino" /> Femenino</label>
+                        <label><input type="radio" name="genero" value="otro" /> Otro</label>
+                    </div>
+                </div>
+                <div class="grupo-form">
+                    <label><i class="fas fa-heart"></i> Intereses:</label>
+                    <div class="grupo-checkbox">
+                        <label><input type="checkbox" name="intereses" value="PS5" /> PS5</label>
+                        <label><input type="checkbox" name="intereses" value="Switch" /> Switch</label>
+                        <label><input type="checkbox" name="intereses" value="Xbox" /> XBox</label>
+                        <label><input type="checkbox" name="intereses" value="PC" /> PC</label>
+                    </div>
+                </div>
+                <h3>Comentarios:</h3>
+                <textarea id="input-comentarios" placeholder="Escribe tu comentario aquí..." required></textarea>
+                <button type="submit">Enviar</button>
+                <div id="contenedor-comentarios"></div>
+            </form>
+        </div>
+
+        <section class="fondo-mapa">
+            <h2>Conoceme</h2>
+            <h3>Un poco sobre mi</h3>
+            <div>
+                <p>Soy un desarrollador full stack con experiencia en Python, ingeniería de prompts y administración de
+                    bases de datos. Aunque aún no trabajo en el mundo IT, mi pasión por la tecnología y el desarrollo
+                    web me ha llevado a crear Gamer Store, una tienda en línea dedicada a la comunidad gamer. Mi
+                    objetivo es diseñar experiencias de compra eficientes y personalizadas, y ofrecer a los jugadores
+                    las mejores herramientas y productos para potenciar su pasión. ¡Gracias por visitar Gamer Store,
+                    donde tu próxima gran experiencia de juego te está esperando!</p>
+            </div>
+        </section>
+        </div>
+
+        <h2>¿Dónde estoy?</h3>
+
+        <div class="map-container">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3283.774484668652!2d-58.370368125391714!3d-34.60986367295207!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95a3352bbc866081%3A0xc128dd6c36d505c2!2sEdificio%20Libertador!5e0!3m2!1ses-419!2sar!4v1730172916745!5m2!1ses-419!2sar"
+                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </main>
+    <footer>
+        <div class="pie-contenido">
+            <div class="pie-iconos">
+                <a href="mailto:gamerstore@gmail.com" target="_blank" rel="noopener noreferrer"
+                    aria-label="Correo electrónico"><i class="fas fa-envelope" title="Correo electrónico"></i></a>
+                <a href="https://www.twitter.com" target="_blank" rel="noopener noreferrer" aria-label="Twitter"><i
+                        class="fab fa-twitter" title="Twitter"></i></a>
+                <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><i
+                        class="fab fa-instagram" title="Instagram"></i></a>
+            </div>
+            <p>© 2024 Gamer Store. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+</body>
+
+</html>

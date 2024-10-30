@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>Gamer Store</title>
+  <link rel="shortcut icon" href="static/imagenes/logo.png" type="image/x-icon" />
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" type="text/css" />
+  <link rel="stylesheet" href="css/styles.css" type="text/css" />
+  <script src="Javascript.js" defer></script>
+</head>
+
+<body>
+  <header class="encabezado">
+    <a id="arriba"><img src="static/imagenes/logo.png" alt="logo"></a>
+    <h1 class="titulo-pagina"><em>Gamer Store</em></h1>
+  </header>
+
+  <!-- Banner  -->
+  <section class="banner">
+    <h2>Level Up Your Game!</h2>
+    <p>Explora lo último en consolas, juegos y accesorios.</p>
+  </section>
+
+  <nav>
+    <button class="alternar-menu" onclick="alternarMenu()">☰</button>
+    <ul id="menu">
+      <li><a href="index.html"><i class="fas fa-home"></i> Página principal</a></li>
+      <li><a href="productos.html"><i class="fas fa-book"></i> Catálogo de productos</a></li>
+      <li><a href="contacto.html"><i class="fas fa-comment-alt"></i> Contacto</a></li>
+      <li><a href="reseñas.html"><i class="fas fa-comment-dots"></i> Opiniones</a></li>
+    </ul>
+  </nav>
+
+  <div class="overlay-banner">
+    <img src="static/imagenes/banner.jpg" alt="Banner de Gamer Store">
+    <div class="texto-banner">
+      <h1>Bienvenido a Gamer Store</h1>
+      <p>Encuentra los mejores productos digitales para gamers</p>
+    </div>
+  </div>
+
+  <main>
+    <h1>Catálogo de Productos</h1>
+
+    <!-- Consolas -->
+    <section class="categoria">
+      <h2>Consolas</h2>
+      <div class="catalogo">
+        <div class="tarjeta-producto">
+          <img src="https://www.psu.com/wp/wp-content/uploads/2020/07/PS5BlackEdition-1024x811.jpg" alt="PS5"
+            class="producto" />
+          <div class="producto-info">
+            <h2 class="producto-nombre">PlayStation 5 1TB</h2>
+            <p class="producto-descripcion">Consola de última generación con gráficos ultra realistas.</p>
+            <p class="producto-precio">$1.634.000</p>
+          </div>
+        </div>
+
+        <div class="tarjeta-producto">
+          <img src="https://th.bing.com/th/id/OIP.SRfsqER_-Xa2IwPwwvMzcgAAAA?rs=1&pid=ImgDetMain" alt="Xbox Series S"
+            class="producto" />
+          <div class="producto-info">
+            <h2 class="producto-nombre">Xbox Series S 1TB</h2>
+            <p class="producto-descripcion">La consola más potente de Microsoft con 4K UHD en HDR.</p>
+            <p class="producto-precio">$1.340.000</p>
+          </div>
+        </div>
+        <div class="tarjeta-producto">
+          <img
+            src="https://i.blogs.es/9c75ca/-cuanto-cuesta-un-nintendo-switch-en-mexico-te-listamos-precios-de-diferentes-tiendas-del-pais-incluyendo-cada-edicion-de-la-consola-4/1366_2000.jpeg"
+            alt="Nintendo Switch" class="producto" />
+          <div class="producto-info">
+            <h2 class="producto-nombre">Nintendo Switch 64GB</h2>
+            <p class="producto-descripcion">Consola híbrida portátil para jugar donde quieras.</p>
+            <p class="producto-precio">$751.000</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Joysticks -->
+    <section class="categoria">
+      <h2>Joysticks</h2>
+      <div class="catalogo">
+        <div class="tarjeta-producto">
+          <img src="https://cdn.webtekno.com/media/cache/content_detail_v2/article/93618/sony-playstation-5-etkinlik-tarihi-1590769015.jpg"
+            alt="DualSense 5" class="producto" />
+          <div class="producto-info">
+            <h2 class="producto-nombre">DualSense 5</h2>
+            <p class="producto-descripcion">Joystick ergonómico de Sony con alta sensibilidad.</p>
+            <p class="producto-precio">$160.000</p>
+          </div>
+        </div>
+        <div class="tarjeta-producto">
+          <img src="https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/b435fd108648221.5fc2786f4a951.jpg"
+            alt="Xbox Controller" class="producto" />
+          <div class="producto-info">
+            <h2 class="producto-nombre">Xbox Controller</h2>
+            <p class="producto-descripcion">Mando inalámbrico compatible con PC y Xbox Series.</p>
+            <p class="producto-precio">$180.000</p>
+          </div>
+        </div>
+        <div class="tarjeta-producto">
+          <img src="https://www.bhphotovideo.com/images/images2000x2000/nintendo_hacafsska_switch_pro_controller_1315035.jpg"
+            alt="Nintendo Pro Controller" class="producto" />
+          <div class="producto-info">
+            <h2 class="producto-nombre">Nintendo Pro Controller</h2>
+            <p class="producto-descripcion">Mando ergonómico para  Nintendo Switch.</p>
+            <p class="producto-precio">$173.000</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Juegos -->
+    <section class="categoria">
+      <h2>Juegos</h2>
+      <div class="catalogo">
+        <div class="tarjeta-producto">
+          <img src="https://static0.gamerantimages.com/wordpress/wp-content/uploads/2020/11/god-of-war-ragnarok-fan-cover.jpg"
+            alt="God of War Ragnarok" class="producto" />
+          <div class="producto-info">
+            <h2 class="producto-nombre">God of War Ragnarok</h2>
+            <p class="producto-descripcion">Embárcate en una épica aventura nórdica junto a Kratos y Atreus.</p>
+            <p class="producto-precio">$128.000</p>
+          </div>
+        </div>
+        <div class="tarjeta-producto">
+          <img src="https://th.bing.com/th/id/OIP.7hCn-PgMyiTsJVyJIi-4HgAAAA?rs=1&pid=ImgDetMain" alt="Elden Ring"
+            class="producto" />
+          <div class="producto-info">
+            <h2 class="producto-nombre">Elden Ring</h2>
+            <p class="producto-descripcion">Explora un vasto mundo abierto lleno de peligros y misterios.</p>
+            <p class="producto-precio">$100.000</p>
+          </div>
+        </div>
+        <div class="tarjeta-producto">
+          <img src="https://assets1.ignimgs.com/2017/01/20/mario-kart-8-deluxe-rp-switch-1484876317777.jpg" alt="Mario Kart 8 Deluxe"
+            class="producto" />
+          <div class="producto-info">
+            <h2 class="producto-nombre">Mario Kart 8 Deluxe</h2>
+            <p class="producto-descripcion">Corre con Mario y amigos en divertidas pistas.</p>
+            <p class="producto-precio">$116.000</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="pie-contenido">
+      <div class="pie-iconos">
+        <a href="mailto:gamerstore@gmail.com" target="_blank" rel="noopener noreferrer"
+          aria-label="Correo electrónico"><i class="fas fa-envelope" title="Correo electrónico"></i></a>
+        <a href="https://www.twitter.com" target="_blank" rel="noopener noreferrer" aria-label="Twitter"><i
+            class="fab fa-twitter"></i></a>
+        <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><i
+            class="fab fa-instagram"></i></a>
+      </div>
+      <p>© 2024 Gamer Store. Todos los derechos reservados.</p>
+    </div>
+  </footer>
+</body>
+
+</html>
