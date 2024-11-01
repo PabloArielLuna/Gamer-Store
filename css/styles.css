@@ -1,7 +1,7 @@
 /* General */
 body,
 * {
-    font-family: 'Quicksand', sans-serif;
+    font-family: Quicksand , sans-serif;
     box-sizing: border-box;
     margin: 0;
     padding: 0;
@@ -16,60 +16,49 @@ h1 {
 .encabezado {
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    /* Alinea el logo y título a los extremos */
-    background-color: #1c1c1e;
-    /* Fondo oscuro */
+    justify-content: space-between;/* Alinea el logo y título a los extremos */
+    background-color: rgb(28, 28, 30);/* Fondo oscuro */
     padding: 1rem 2rem;
-    border-bottom: 3px solid #4b8bfc;
-    /* Línea decorativa en el borde inferior */
+    border-bottom: 3px solid rgb(75, 139, 252);/* Línea decorativa en el borde inferior */
 }
 
 .encabezado a {
     display: flex;
     align-items: center;
     margin-right: 1rem;
-    text-decoration: none;
-    /* Elimina subrayado */
+    text-decoration: none;/* Elimina subrayado */
 }
 
 .encabezado img {
-    width: 3rem;
-    /* Ajusta el tamaño del logo según sea necesario */
+    width: 3rem;/* Ajusta el tamaño del logo según sea necesario */
     height: auto;
-    border-radius: 8px;
-    /* Bordes redondeados para un toque moderno */
-    transition: transform 0.3s ease;
-    /* Efecto de animación */
+    border-radius: 8px;/* Bordes redondeados para un toque moderno */
+    transition: transform 0.3s ease;/* Efecto de animación */
 }
 
 .encabezado img:hover {
-    transform: scale(1.1);
-    /* Aumenta ligeramente el tamaño al pasar el ratón */
+    transform: scale(1.1);/* Aumenta ligeramente el tamaño al pasar el ratón */
 }
 
 .titulo-pagina {
     font-size: 2.5rem;
-    color: #fff;
+    color: rgb(255, 255, 255);
     font-weight: 600;
-    font-family: 'Quicksand', sans-serif;
-    /* Asegúrate de tener esta fuente importada */
+    font-family: Quicksand, sans-serif;/* Asegúrate de tener esta fuente importada */
     text-align: center;
     flex-grow: 1;
 }
 
 .titulo-pagina em {
-    color: #4b8bfc;
-    /* Color acentuado en el texto */
-    font-style: normal;
-    /* Elimina cursiva */
+    color: rgb(75, 139, 252);/* Color acentuado en el texto */
+    font-style: normal;/* Elimina cursiva */
 }
 
 nav {
     display: flex;
     justify-content: center;
     align-items: center;
-    background: #2c2c34;
+    background: rgb(44, 44, 52);
     color: white;
     padding: 0.5rem;
     flex-wrap: wrap;
@@ -92,7 +81,7 @@ nav {
 }
 
 #menu a {
-    color: #fff;
+    color: rgb(255, 255, 255);
     text-decoration: none;
     transition: color 0.3s;
     justify-content: space-around;
@@ -103,9 +92,8 @@ nav {
 }
 
 #menu a:hover {
-    color: #4b8bfc;
-    transform: scale(1.1);
-    /* Aumenta ligeramente el tamaño al pasar el ratón */
+    color: rgb(75, 139, 252);
+    transform: scale(1.1);/* Aumenta ligeramente el tamaño al pasar el ratón */
 }
 
 nav ul li {
@@ -122,7 +110,7 @@ nav ul li {
 
 /* Banner */
 .banner {
-    background: #3b3b3f;
+    background: rgb(59, 59, 63);
     color: #fff;
     text-align: center;
     padding: 1rem;
@@ -158,10 +146,9 @@ nav ul li {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    color: #fff;
+    color: rgb(255, 255, 255);
     text-align: center;
-    background: rgba(0, 0, 0, 0.5);
-    /* Fondo oscuro translúcido */
+    background: rgba(0, 0, 0, 0.5);/* Fondo oscuro translúcido */
     padding: 1rem 2rem;
     border-radius: 8px;
 }
@@ -238,7 +225,7 @@ nav ul li {
     align-items: center;
     padding: 1rem;
     margin: 1rem auto;
-    background: #f9f9f9;
+    background: rgb(249, 249, 249);
     max-width: 800px;
     border-radius: 8px;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
@@ -268,8 +255,8 @@ nav ul li {
 }
 
 .tarjeta-producto {
-    background-color: #03253f;
-    border: 1px solid #ddd;
+    background-color: rgb(3, 37, 63);
+    border: 1px solid rgb(221, 221, 221);
     border-radius: 8px;
     overflow: hidden;
     display: flex;
@@ -277,8 +264,7 @@ nav ul li {
     align-items: center;
     width: calc(33.333% - 1rem);
     max-width: 300px;
-    aspect-ratio: 1 / 1.5;
-    /* Mantiene una proporción consistente */
+    aspect-ratio: 1 / 1.5;/* Mantiene una proporción consistente */
     transition: transform 0.3s, box-shadow 0.3s;
 }
 
@@ -290,8 +276,7 @@ nav ul li {
 .producto {
     width: 100%;
     height: auto;
-    aspect-ratio: 1 / 1;
-    /* Mantiene una proporción cuadrada en la imagen */
+    aspect-ratio: 1 / 1;/* Mantiene una proporción cuadrada en la imagen */
     object-fit: cover;
 }
 
@@ -306,12 +291,12 @@ nav ul li {
 .producto-nombre {
     font-size: 1.3rem;
     margin: 0.5rem 0;
-    color: #fff;
+    color: rgb(255, 255, 255);
 }
 
 .producto-descripcion {
     font-size: 0.95rem;
-    color: #e4eff5;
+    color: rgb(228, 239, 245);
     margin: 0.5rem 0;
 }
 
@@ -325,15 +310,11 @@ nav ul li {
 /* Formulario */
 /* Centrado general del contenedor del formulario */
 .pagina-registro {
-    display: flex;
-    /* Activa el modelo de flexbox para centrar contenido */
-    flex-direction: column;
-    /* Los elementos dentro se apilan verticalmente */
-    align-items: center;
-    /* Centra los elementos horizontalmente */
+    display: flex;/* Activa el modelo de flexbox para centrar contenido */
+    flex-direction: column;/* Los elementos dentro se apilan verticalmente */
+    align-items: center;/* Centra los elementos horizontalmente */
     margin: 0 auto;
-    max-width: 90%;
-    /* Limita el ancho para evitar que se expanda demasiado en pantallas grandes */
+    max-width: 90%;/* Limita el ancho para evitar que se expanda demasiado en pantallas grandes */
     padding: 20px;
 }
 
@@ -341,13 +322,11 @@ nav ul li {
     max-width: 600px;
     width: 100%;
     padding: 20px;
-    background: #fff;
+    background: rgb(255, 255, 255);
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    margin-bottom: 30px;
-    /* Añade espacio entre el formulario y otros elementos */
-    text-align: center;
-    /* Centra el texto dentro del formulario */
+    margin-bottom: 30px;/* Añade espacio entre el formulario y otros elementos */
+    text-align: center;/* Centra el texto dentro del formulario */
 }
 
 .grupo-form {
@@ -367,7 +346,7 @@ nav ul li {
 .grupo-checkbox label {
     width: 100%;
     padding: 10px;
-    border: 1px solid #ccc;
+    border: 1px solid rgb(204, 204, 204);
     border-radius: 5px;
     margin-top: 5px;
     box-sizing: border-box;
@@ -384,7 +363,7 @@ button[type="submit"] {
     display: block;
     width: 100%;
     padding: 10px;
-    background: #1c1c1e;
+    background: rgb(28, 28, 30);
     color: white;
     border: none;
     border-radius: 5px;
@@ -393,27 +372,25 @@ button[type="submit"] {
 }
 
 button[type="submit"]:hover {
-    background: #4b8bfc;
-    transform: scale(1.05);
-    /* Aumenta ligeramente el tamaño al pasar el ratón */
+    background: rgb(75, 139, 252);
+    transform: scale(1.05);/* Aumenta ligeramente el tamaño al pasar el ratón */
 }
 
 #input-comentarios {
     width: 100%;
     height: 100px;
     padding: 10px;
-    border: 1px solid #ccc;
+    border: 1px solid rgb(204, 204, 204);
     border-radius: 5px;
     resize: none;
 }
 
 /* Fondo y centrado de la sección del mapa */
 .fondo-mapa {
-    background-color: #f0f0f0;
+    background-color: rgb(240, 240, 240);
     padding: 20px;
     border-radius: 8px;
-    margin: 20px auto;
-    /* Centra la sección y añade espacio en vertical */
+    margin: 20px auto;/* Centra la sección y añade espacio en vertical */
     width: 100%;
     max-width: 600px;
     text-align: center;
@@ -422,12 +399,9 @@ button[type="submit"]:hover {
 /* Centrado y ajuste de tamaño del mapa */
 .map-container {
     position: relative;
-    width: 100%;
-    /* Asegura que el mapa ocupe todo el ancho disponible */
-    padding-top: 40%;
-    /* Cambia la proporción del mapa para hacerlo más bajo */
-    border-radius: 10px;
-    /* Bordes redondeados para diseño más profesional */
+    width: 100%;/* Asegura que el mapa ocupe todo el ancho disponible */
+    padding-top: 40%;/* Cambia la proporción del mapa para hacerlo más bajo */
+    border-radius: 10px;/* Bordes redondeados para diseño más profesional */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
@@ -438,12 +412,21 @@ button[type="submit"]:hover {
     width: 100%;
     height: 100%;
     border: 0;
+} 
+
+.mapa-embed {
+    width: 600px;
+    height: 450px;
+    border: 0;
+    allowfullscreen: true;
+    loading: lazy;
 }
+
 
 /* Estilos para la sección de reseñas */
 .resenas {
     padding: 2rem;
-    background-color: #f1f1f1;
+    background-color: rgb(241, 241, 241);
 }
 
 .resenas h2 {
@@ -468,9 +451,9 @@ button[type="submit"]:hover {
 .resena {
     flex: 1 1 100%; /* Por defecto ocupa toda la fila en pantallas pequeñas */
     padding: 15px;
-    border: 1px solid #ccc;
+    border: 1px solid rgb(204, 204, 204);
     border-radius: 8px;
-    background-color: #2c2c34;
+    background-color: rgb(44, 44, 52);
     color: #ccc;
 }
 
@@ -492,13 +475,13 @@ button[type="submit"]:hover {
 
 .resena .autor {
     font-style: italic;
-    color: #bbb;
+    color: rgb(187, 187, 187);
     margin-top: 0.5rem;
 } 
 
 
 footer {
-    background: #2c2c34;
+    background: rgb(44, 44, 52);
     padding: 10px 0;
     text-align: center;
     width: 100%;
@@ -506,7 +489,7 @@ footer {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    color: #fff;
+    color: rgb(255, 255, 255);
 }
 
 .pie-contenido {
@@ -528,13 +511,13 @@ footer {
 }
 
 .pie-iconos a {
-    color: #fff;
+    color: rgb(255, 255, 255);
     font-size: 24px;
     transition: color 0.3s;
 }
 
 .pie-iconos a:hover {
-    color: #4b8bfc;
+    color: rgb(75, 139, 252);
 }
 
 /* Breakpoints */
@@ -683,8 +666,7 @@ footer {
     }
 
     .map-container {
-        padding-top: 50%;
-        /* Ajuste de la relación de aspecto del mapa */
+        padding-top: 50%;/* Ajuste de la relación de aspecto del mapa */
     }
 
     .fondo-mapa {
@@ -749,8 +731,7 @@ footer {
     }
 
     .map-container {
-        padding-top: 60%;
-        /* Relación de aspecto mayor para pantallas pequeñas */
+        padding-top: 60%;/* Relación de aspecto mayor para pantallas pequeñas */
     }
 
     .fondo-mapa {
