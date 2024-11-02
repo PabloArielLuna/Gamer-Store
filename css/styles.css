@@ -1,3 +1,12 @@
+/* Reset general */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
 /* General */
 body,
 * {
@@ -27,17 +36,6 @@ h1 {
     align-items: center;
     margin-right: 1rem;
     text-decoration: none;/* Elimina subrayado */
-}
-
-.encabezado img {
-    width: 3rem;/* Ajusta el tamaño del logo según sea necesario */
-    height: auto;
-    border-radius: 8px;/* Bordes redondeados para un toque moderno */
-    transition: transform 0.3s ease;/* Efecto de animación */
-}
-
-.encabezado img:hover {
-    transform: scale(1.1);/* Aumenta ligeramente el tamaño al pasar el ratón */
 }
 
 .titulo-pagina {
@@ -80,6 +78,22 @@ nav {
     padding: 0;
 }
 
+.carrusel-item a {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.pie-iconos a {
+    color: rgb(255, 255, 255);
+    font-size: 24px;
+    transition: color 0.3s;
+}
+
+.pie-iconos a:hover {
+    color: rgb(75, 139, 252);
+}
+
 #menu a {
     color: rgb(255, 255, 255);
     text-decoration: none;
@@ -89,11 +103,6 @@ nav {
     padding: 0;
     width: 100%;
     max-width: 1200px;
-}
-
-#menu a:hover {
-    color: rgb(75, 139, 252);
-    transform: scale(1.1);/* Aumenta ligeramente el tamaño al pasar el ratón */
 }
 
 nav ul li {
@@ -108,10 +117,15 @@ nav ul li {
     transition: background 0.3s, transform 0.3s;
 }
 
+#menu a:hover {
+    color: rgb(75, 139, 252);
+    transform: scale(1.1);/* Aumenta ligeramente el tamaño al pasar el ratón */
+}
+
 /* Banner */
 .banner {
     background: rgb(59, 59, 63);
-    color: #fff;
+    color: rgb(255, 255, 255);
     text-align: center;
     padding: 1rem;
 }
@@ -141,6 +155,23 @@ nav ul li {
     display: flex
 }
 
+.encabezado img {
+    width: 3rem;/* Ajusta el tamaño del logo según sea necesario */
+    height: auto;
+    border-radius: 8px;/* Bordes redondeados para un toque moderno */
+    transition: transform 0.3s ease;/* Efecto de animación */
+}
+
+.carrusel-item a img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.encabezado img:hover {
+    transform: scale(1.1);/* Aumenta ligeramente el tamaño al pasar el ratón */
+}
+
 .texto-banner {
     position: absolute;
     top: 50%;
@@ -148,7 +179,7 @@ nav ul li {
     transform: translate(-50%, -50%);
     color: rgb(255, 255, 255);
     text-align: center;
-    background: rgba(0, 0, 0, 0.5);/* Fondo oscuro translúcido */
+    background: rgba(0, 0, 0, 50%);/* Fondo oscuro translúcido */
     padding: 1rem 2rem;
     border-radius: 8px;
 }
@@ -172,7 +203,7 @@ nav ul li {
     max-width: 50vw;
     height: 25vw;
     border-radius: 8px;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 20%);
 }
 
 .carrusel-interno {
@@ -187,18 +218,6 @@ nav ul li {
     height: 100%;
 }
 
-.carrusel-item a {
-    display: block;
-    width: 100%;
-    height: 100%;
-}
-
-.carrusel-item a img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-
 .botones-carrusel {
     position: absolute;
     top: 50%;
@@ -209,7 +228,7 @@ nav ul li {
 }
 
 .control-carrusel {
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 50%);
     border: none;
     color: white;
     padding: 10px;
@@ -228,7 +247,7 @@ nav ul li {
     background: rgb(249, 249, 249);
     max-width: 800px;
     border-radius: 8px;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 10%);
 }
 
 .contenedor-imagen,
@@ -270,7 +289,7 @@ nav ul li {
 
 .tarjeta-producto:hover {
     transform: scale(1.05);
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 20%);
 }
 
 .producto {
@@ -324,7 +343,7 @@ nav ul li {
     padding: 20px;
     background: rgb(255, 255, 255);
     border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 10%);
     margin-bottom: 30px;/* Añade espacio entre el formulario y otros elementos */
     text-align: center;/* Centra el texto dentro del formulario */
 }
@@ -402,7 +421,7 @@ button[type="submit"]:hover {
     width: 100%;/* Asegura que el mapa ocupe todo el ancho disponible */
     padding-top: 40%;/* Cambia la proporción del mapa para hacerlo más bajo */
     border-radius: 10px;/* Bordes redondeados para diseño más profesional */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 10%);
 }
 
 .map-container iframe {
@@ -418,10 +437,7 @@ button[type="submit"]:hover {
     width: 600px;
     height: 450px;
     border: 0;
-    allowfullscreen: true;
-    loading: lazy;
 }
-
 
 /* Estilos para la sección de reseñas */
 .resenas {
@@ -442,7 +458,7 @@ button[type="submit"]:hover {
 }
 
 /* Contenedor de las reseñas */
-.reseñas-container {
+.resenas-container {
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
@@ -454,12 +470,12 @@ button[type="submit"]:hover {
     border: 1px solid rgb(204, 204, 204);
     border-radius: 8px;
     background-color: rgb(44, 44, 52);
-    color: #ccc;
+    color: rgb(204, 204, 204);
 }
 
 .resena:hover {
     transform: scale(1.03);
-    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 30%);
 }
 
 .resena h3 {
@@ -510,16 +526,6 @@ footer {
     margin-bottom: 10px;
 }
 
-.pie-iconos a {
-    color: rgb(255, 255, 255);
-    font-size: 24px;
-    transition: color 0.3s;
-}
-
-.pie-iconos a:hover {
-    color: rgb(75, 139, 252);
-}
-
 /* Breakpoints */
 @media (min-width: 768px) {
     .articulo-bienvenida {
@@ -530,6 +536,10 @@ footer {
         flex: 2;
     }
 
+    .contenedor-imagen {
+        max-width: 45%;
+    }
+    
     .articulo-bienvenida .contenedor-imagen {
         flex: 1;
     }
@@ -554,10 +564,6 @@ footer {
     .articulo-bienvenida {
         flex-direction: row;
         padding: 1.5rem;
-    }
-
-    .contenedor-imagen {
-        max-width: 45%;
     }
 
     .contenedor-imagen img {

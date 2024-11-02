@@ -26,12 +26,11 @@
     </section>
 
     <nav>
-        <button class="alternar-menu" onclick="alternarMenu()">☰</button>
-        <ul id="menu">
-            <li><a href="index.html"><i class="fas fa-home"></i> Página principal</a></li>
-            <li><a href="productos.html"><i class="fas fa-book"></i> Catálogo de productos</a></li>
-            <li><a href="contacto.html"><i class="fas fa-comment-alt"></i> Contacto</a></li>
-            <li><a href="reseñas.html"><i class="fas fa-comment-dots"></i> Opiniones</a></li>
+        <button class="alternar-menu" onclick="alternarMenu()">☰<span class="sr-only">Alternar Menú</span></button>        <ul id="menu">
+            <li><a href="index.html" alt="Ir a la página principal"><i class="fas fa-home"></i><span class="sr-only">Página principal</span> Página principal</a></li>
+            <li><a href="productos.html" alt="Ver catálogo de productos"><i class="fas fa-book"></i><span class="sr-only">Catálogo de productos</span> Catálogo de productos</a></li>
+            <li><a href="contacto.html" alt="Ir a la página de contacto"><i class="fas fa-comment-alt"></i><span class="sr-only">Contacto</span> Contacto</a></li>
+            <li><a href="reseñas.html" alt="Ir a la sección de opiniones"><i class="fas fa-comment-dots"></i><span class="sr-only">Opiniones</span>Opiniones</a></li>
         </ul>
     </nav>
 
@@ -46,7 +45,7 @@
     <main>
         <section class="resenas">
             <h2>Reseñas de nuestros clientes</h2>
-            <div class="reseñas-container">
+            <div class="resenas-container">
                 <div class="resena">
                     <h3>¡Increíble calidad!</h3>
                     <p>Los productos son de alta calidad y el soporte es excelente. Me atendieron con mucha amabilidad.
