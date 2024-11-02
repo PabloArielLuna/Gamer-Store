@@ -25,38 +25,32 @@ h1 {
 .encabezado {
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    /* Alinea el logo y título a los extremos */
+    justify-content: space-between;/* Alinea el logo y título a los extremos */
     background-color: rgb(28, 28, 30);
     /* Fondo oscuro */
     padding: 1rem 2rem;
-    border-bottom: 3px solid rgb(75, 139, 252);
-    /* Línea decorativa en el borde inferior */
+    border-bottom: 3px solid rgb(75, 139, 252);/* Línea decorativa en el borde inferior */
 }
 
 .encabezado a {
     display: flex;
     align-items: center;
     margin-right: 1rem;
-    text-decoration: none;
-    /* Elimina subrayado */
+    text-decoration: none;/* Elimina subrayado */
 }
 
 .titulo-pagina {
     font-size: 2.5rem;
     color: rgb(255, 255, 255);
     font-weight: 600;
-    font-family: Quicksand, sans-serif;
-    /* Asegúrate de tener esta fuente importada */
+    font-family: Quicksand, sans-serif;/* Asegúrate de tener esta fuente importada */
     text-align: center;
     flex-grow: 1;
 }
 
 .titulo-pagina em {
-    color: rgb(75, 139, 252);
-    /* Color acentuado en el texto */
-    font-style: normal;
-    /* Elimina cursiva */
+    color: rgb(75, 139, 252);/* Color acentuado en el texto */
+    font-style: normal;/* Elimina cursiva */
 }
 
 nav {
@@ -126,8 +120,7 @@ nav ul li {
 
 #menu a:hover {
     color: rgb(75, 139, 252);
-    transform: scale(1.1);
-    /* Aumenta ligeramente el tamaño al pasar el ratón */
+    transform: scale(1.1);/* Aumenta ligeramente el tamaño al pasar el ratón */
 }
 
 /* Banner */
@@ -160,17 +153,25 @@ nav ul li {
     width: 100%;
     height: auto;
     object-fit: cover;
-    display: flex
+    display: flex;
 }
 
 .encabezado img {
-    width: 3rem;
-    /* Ajusta el tamaño del logo según sea necesario */
+    width: 3rem;/* Ajusta el tamaño del logo según sea necesario */
     height: auto;
+    border-radius: 8px;/* Bordes redondeados para un toque moderno */
+    transition: transform 0.3s ease;/* Efecto de animación */
+}
+
+.contenedor-imagen img {
+    width: 100%;
+    /* Ajusta al ancho del contenedor */
+    max-width: 300px;
+    /* Limita el tamaño máximo */
+    height: auto;
+    /* Mantiene la proporción */
     border-radius: 8px;
-    /* Bordes redondeados para un toque moderno */
-    transition: transform 0.3s ease;
-    /* Efecto de animación */
+    /* Agrega bordes redondeados, si es deseado */
 }
 
 .carrusel-item a img {
@@ -248,7 +249,6 @@ nav ul li {
     cursor: pointer;
 }
 
-
 /* Bienvenida */
 .articulo-bienvenida {
     display: flex;
@@ -266,13 +266,6 @@ nav ul li {
 .contenedor-imagen,
 .contenedor-texto {
     flex: 1;
-}
-
-.contenedor-imagen img {
-    width: 100%; /* Ajusta al ancho del contenedor */
-    max-width: 300px; /* Limita el tamaño máximo */
-    height: auto; /* Mantiene la proporción */
-    border-radius: 8px; /* Agrega bordes redondeados, si es deseado */
 }
 
 .imagen-bienvenida {
@@ -352,15 +345,11 @@ nav ul li {
 
 /* Centrado general del contenedor del formulario */
 .pagina-registro {
-    display: flex;
-    /* Activa el modelo de flexbox para centrar contenido */
-    flex-direction: column;
-    /* Los elementos dentro se apilan verticalmente */
-    align-items: center;
-    /* Centra los elementos horizontalmente */
+    display: flex;/* Activa el modelo de flexbox para centrar contenido */
+    flex-direction: column;/* Los elementos dentro se apilan verticalmente */
+    align-items: center;/* Centra los elementos horizontalmente */
     margin: 0 auto;
-    max-width: 90%;
-    /* Limita el ancho para evitar que se expanda demasiado en pantallas grandes */
+    max-width: 90%;/* Limita el ancho para evitar que se expanda demasiado en pantallas grandes */
     padding: 20px;
 }
 
@@ -371,10 +360,8 @@ nav ul li {
     background: rgb(255, 255, 255);
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 10%);
-    margin-bottom: 30px;
-    /* Añade espacio entre el formulario y otros elementos */
-    text-align: center;
-    /* Centra el texto dentro del formulario */
+    margin-bottom: 30px;/* Añade espacio entre el formulario y otros elementos */
+    text-align: center;/* Centra el texto dentro del formulario */
 }
 
 .grupo-form {
@@ -421,8 +408,7 @@ button[type="submit"] {
 
 button[type="submit"]:hover {
     background: rgb(75, 139, 252);
-    transform: scale(1.05);
-    /* Aumenta ligeramente el tamaño al pasar el ratón */
+    transform: scale(1.05);/* Aumenta ligeramente el tamaño al pasar el ratón */
 }
 
 #input-comentarios {
@@ -439,8 +425,7 @@ button[type="submit"]:hover {
     background-color: rgb(240, 240, 240);
     padding: 20px;
     border-radius: 8px;
-    margin: 20px auto;
-    /* Centra la sección y añade espacio en vertical */
+    margin: 20px auto;/* Centra la sección y añade espacio en vertical */
     width: 100%;
     max-width: 600px;
     text-align: center;
@@ -449,12 +434,9 @@ button[type="submit"]:hover {
 /* Centrado y ajuste de tamaño del mapa */
 .map-container {
     position: relative;
-    width: 100%;
-    /* Asegura que el mapa ocupe todo el ancho disponible */
-    padding-top: 40%;
-    /* Cambia la proporción del mapa para hacerlo más bajo */
-    border-radius: 10px;
-    /* Bordes redondeados para diseño más profesional */
+    width: 100%;/* Asegura que el mapa ocupe todo el ancho disponible */
+    padding-top: 40%;/* Cambia la proporción del mapa para hacerlo más bajo */
+    border-radius: 10px;/* Bordes redondeados para diseño más profesional */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 10%);
 }
 
@@ -529,7 +511,6 @@ button[type="submit"]:hover {
     color: rgb(187, 187, 187);
     margin-top: 0.5rem;
 }
-
 
 footer {
     background: rgb(44, 44, 52);
@@ -610,8 +591,7 @@ footer {
     }
 
     .resena {
-        flex: 1 1 calc(50% - 10px);
-        /* Dos divs por fila, con un pequeño margen */
+        flex: 1 1 calc(50% - 10px);/* Dos divs por fila, con un pequeño margen */
     }
 }
 
@@ -702,8 +682,7 @@ footer {
     }
 
     .map-container {
-        padding-top: 50%;
-        /* Ajuste de la relación de aspecto del mapa */
+        padding-top: 50%;/* Ajuste de la relación de aspecto del mapa */
     }
 
     .fondo-mapa {
@@ -713,7 +692,7 @@ footer {
 }
 
 /* Ajustes para dispositivos móviles */
-@media (max-width <=600px) {
+@media (width <=600px) {
     .titulo-pagina {
         font-size: 3rem;
     }
@@ -727,8 +706,7 @@ footer {
     }
 
     .imagen-bienvenida {
-        max-height: 200px;
-        /* Ajuste menor para pantallas pequeñas */
+        max-height: 200px;/* Ajuste menor para pantallas pequeñas */
     }
 
     /* Texto del banner */
@@ -769,8 +747,7 @@ footer {
     }
 
     .map-container {
-        padding-top: 60%;
-        /* Relación de aspecto mayor para pantallas pequeñas */
+        padding-top: 60%;/* Relación de aspecto mayor para pantallas pequeñas */
     }
 
     .fondo-mapa {
@@ -778,7 +755,6 @@ footer {
         padding: 10px;
         font-size: 0.9em;
     }
-
 
     .resena-grid {
         grid-template-columns: 1fr;
