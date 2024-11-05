@@ -26,8 +26,7 @@ h1 {
     display: flex;
     align-items: center;
     justify-content: space-between;/* Alinea el logo y título a los extremos */
-    background-color: rgb(28, 28, 30);
-    /* Fondo oscuro */
+    background-color: rgb(28, 28, 30);/* Fondo oscuro */
     padding: 1rem 2rem;
     border-bottom: 3px solid rgb(75, 139, 252);/* Línea decorativa en el borde inferior */
 }
@@ -157,21 +156,17 @@ nav ul li {
 }
 
 .encabezado img {
-    width: 3rem;/* Ajusta el tamaño del logo según sea necesario */
+    width: 5rem;/* Ajusta el tamaño del logo según sea necesario */
     height: auto;
     border-radius: 8px;/* Bordes redondeados para un toque moderno */
     transition: transform 0.3s ease;/* Efecto de animación */
 }
 
 .contenedor-imagen img {
-    width: 100%;
-    /* Ajusta al ancho del contenedor */
-    max-width: 300px;
-    /* Limita el tamaño máximo */
-    height: auto;
-    /* Mantiene la proporción */
-    border-radius: 8px;
-    /* Agrega bordes redondeados, si es deseado */
+    width: 100%;/* Ajusta al ancho del contenedor */
+    max-width: 300px;/* Limita el tamaño máximo */
+    height: auto;/* Mantiene la proporción */
+    border-radius: 8px;/* Agrega bordes redondeados, si es deseado */
 }
 
 .carrusel-item a img {
@@ -181,8 +176,7 @@ nav ul li {
 }
 
 .encabezado img:hover {
-    transform: scale(1.1);
-    /* Aumenta ligeramente el tamaño al pasar el ratón */
+    transform: scale(1.1);/* Aumenta ligeramente el tamaño al pasar el ratón */
 }
 
 .texto-banner {
@@ -192,8 +186,7 @@ nav ul li {
     transform: translate(-50%, -50%);
     color: rgb(255, 255, 255);
     text-align: center;
-    background: rgba(0, 0, 0, 50%);
-    /* Fondo oscuro translúcido */
+    background: rgba(0, 0, 0, 50%);/* Fondo oscuro translúcido */
     padding: 1rem 2rem;
     border-radius: 8px;
 }
@@ -296,8 +289,7 @@ nav ul li {
     align-items: center;
     width: calc(33.333% - 1rem);
     max-width: 300px;
-    aspect-ratio: 1 / 1.5;
-    /* Mantiene una proporción consistente */
+    aspect-ratio: 1 / 1.5;/* Mantiene una proporción consistente */
     transition: transform 0.3s, box-shadow 0.3s;
 }
 
@@ -309,8 +301,7 @@ nav ul li {
 .producto {
     width: 100%;
     height: auto;
-    aspect-ratio: 1 / 1;
-    /* Mantiene una proporción cuadrada en la imagen */
+    aspect-ratio: 1 / 1;/* Mantiene una proporción cuadrada en la imagen */
     object-fit: cover;
 }
 
@@ -481,8 +472,7 @@ button[type="submit"]:hover {
 }
 
 .resena {
-    flex: 1 1 100%;
-    /* Por defecto ocupa toda la fila en pantallas pequeñas */
+    flex: 1 1 100%;/* Por defecto ocupa toda la fila en pantallas pequeñas */
     padding: 15px;
     border: 1px solid rgb(204, 204, 204);
     border-radius: 8px;
