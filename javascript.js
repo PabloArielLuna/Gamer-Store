@@ -26,12 +26,6 @@ document.addEventListener('DOMContentLoaded', () => {
     actualizarCarrusel();
 });
 
-/*-----menú hamburguesa-----*/
-function alternarMenu() {
-    const menu = document.getElementById('menu');
-    menu.classList.toggle('mostrar');
-}
-
 /*Comentarios*/
 const formComentarios = document.getElementById('form-comentarios');
 const inputComentarios = document.getElementById('input-comentarios');
