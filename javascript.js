@@ -56,6 +56,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 });
 
+
 document.addEventListener("DOMContentLoaded", () => {
     // Llamamos a la función para mostrar los productos
     mostrarProductos();
@@ -153,7 +154,7 @@ const productos = [
 
 // Función para mostrar productos
 function mostrarProductos() {
-    const main = document.querySelector("main");
+    const main = document.querySelector(".catalogo");
     productos.forEach((categoria) => {
         const seccion = document.createElement("section");
         seccion.classList.add("categoria");
@@ -224,3 +225,58 @@ function cerrarModal(modal) {
         document.body.style.overflow = ""; // Restauramos el scroll del body
     }
 }
+
+const apiKey = '22de5aad95774130ae564dcb236badf9';
+const apiUrl = `https://api.rawg.io/api/games?key=${apiKey}`;
+
+async function fetchGames() {
+    const container = document.querySelector('.games-container');
+    container.innerHTML = '<p>Cargando juegos...</p>'; // Spinner o mensaje de carga
+    
+    try {
+        console.log('Fetching games from API...');
+        const response = await fetch(apiUrl);
+
+        if (!response.ok) {
+            throw new Error(`Error en la respuesta de la API: ${response.status} ${response.statusText}`);
+        }
+
+        const data = await response.json();
+
+        if (!data.results || data.results.length === 0) {
+            throw new Error('La API no devolvió resultados.');
+        }
+
+        console.log('Datos obtenidos:', data);
+        renderGames(data.results);
+    } catch (error) {
+        console.error('Error al obtener los datos:', error);
+        container.innerHTML = `
+            <p class="error-message">No se pudieron cargar los juegos. Por favor, inténtalo más tarde.</p>
+        `;
+        // Reintentar después de 5 segundos
+        setTimeout(fetchGames, 5000);
+    }
+}
+
+function renderGames(games) {
+    const container = document.querySelector('.games-container');
+    container.innerHTML = ''; 
+
+    games.forEach(game => {
+        const card = document.createElement('div');
+        card.className = 'game-card';
+
+        card.innerHTML = `
+            <img src="${game.background_image || 'https://via.placeholder.com/300x200?text=No+Image'}" 
+            alt="${game.name}" 
+            class="game-image">
+            <h3 class="game-title">${game.name}</h3>
+            <p class="game-genre">${game.genres && game.genres.length ? game.genres.map(genre => genre.name).join(', ') : 'Sin género'}</p>
+        `;
+
+        container.appendChild(card);
+    });
+}
+
+document.addEventListener('DOMContentLoaded', fetchGames);
