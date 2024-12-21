@@ -369,6 +369,34 @@ nav ul li {
     margin-top: 0.5rem;
 }
 
+/*Carrito*/
+.carrito {
+    margin-top: 30px;
+    border: 1px solid #ddd;
+    padding: 20px;
+}
+
+.carrito-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.carrito-imagen {
+    width: 80px;
+    height: auto;
+    margin-right: 20px;
+}
+
+.carrito-detalles {
+    display: flex;
+    flex-direction: column;
+}
+
+button {
+    margin: 5px;
+}
+
 /* Formulario */
 
 /* Centrado general del contenedor del formulario */
@@ -568,6 +596,26 @@ footer {
     margin-bottom: 10px;
 }
 
+.modal-imagen {
+    width: 100%;  /* Ocupa todo el ancho del contenedor */
+    max-width: 400px;  /* Tamaño máximo para evitar que crezca demasiado */
+    height: 250px;  /* Altura fija para uniformidad */
+    object-fit: contain;  /* Ajusta la imagen sin recortar */
+    display: block;
+    margin: 0 auto;  /* Centra la imagen */
+    border-radius: 10px;
+}
+
+.modal-contenido {
+    text-align: center;
+    padding: 20px;
+    background: white;
+    max-width: 500px;  /* Tamaño máximo del modal */
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    position: relative;
+}
+
 .modal-backdrop {
     position: fixed;
     top: 0;
@@ -578,23 +626,6 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
-    z-index: 1000;
-}
-
-.modal-contenido {
-    background: #fff;
-    padding: 20px;
-    border-radius: 10px;
-    width: 90%;
-    max-width: 500px;
-    text-align: center;
-    position: relative;
-}
-
-.modal-imagen {
-    max-width: 100%;
-    height: auto;
-    margin-bottom: 15px;
 }
 
 .modal-cerrar {
