@@ -230,7 +230,6 @@ function cerrarModal(modal) {
 let carrito = JSON.parse(localStorage.getItem("carrito")) || [];
 
 document.addEventListener("DOMContentLoaded", () => {
-    mostrarProductos();
     actualizarCarrito();
 
     // Agregar productos al carrito
